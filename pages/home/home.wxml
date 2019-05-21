@@ -1,0 +1,57 @@
+<swiper
+indicator-dots="{{true}}"
+indicator-color="rgba(255, 255, 255, .6)"
+indicator-active-color="rgba(255, 0, 0,.6)"
+autoplay="{{true}}"
+interval="3000"
+>
+    <swiper-item id="{{item.id}}" data-keyword="{{item.artistNames}}" bindtap="gopath" wx:for="{{homeData.banner}}" wx:key="{{index}}" class="swiper">
+      <image src="{{item.img}}" class="slide-image"/>
+      <view class='swiper-text'><text>{{item.title}}</text></view>
+    </swiper-item>
+</swiper>
+<view class="home">
+  <view class='frist'>
+    <view class='title'>
+      <text>首播</text>
+    </view>
+    <view id="{{item.id}}" data-keyword="{{item.artistNames}}" bindtap="gopath" wx:for="{{homeData.MV}}" wx:key="{{index}}" class='contentInfo'>
+      <view class='imgContain'>
+        <cover-image src='{{item.img}}'></cover-image>
+      </view>
+      <view class='textContain'>
+        <view><text>{{item.title}}</text></view>
+        <view><text>{{item.artistNames}}</text></view>
+      </view>
+    </view>
+  </view>
+ <view class='frist'>
+    <view class='title'>
+      <text>舞蹈</text>
+    </view>
+    <view id="{{item.id}}" data-keyword="{{item.artistNames}}" bindtap="gopath" wx:for="{{homeData.dance}}" wx:key="{{index}}" class='contentInfo'>
+      <view class='imgContain'>
+        <cover-image src='{{item.img}}'></cover-image>
+      </view>
+      <view class='textContain'>
+        <view><text>{{item.title}}</text></view>
+        <view><text>{{item.artistNames}}</text></view>
+      </view>
+    </view>
+  </view>
+
+  <view class='frist'>
+    <view class='title'>
+      <text>现场</text>
+    </view>
+    <view id="{{item.id}}" data-keyword="{{item.artistNames}}" bindtap="gopath" wx:for="{{homeData.live}}" wx:key="{{index}}" class='contentInfo'>
+      <view class='imgContain'>
+        <cover-image src='{{item.img}}'></cover-image>
+      </view>
+      <view class='textContain'>
+        <view><text>{{item.title}}</text></view>
+        <view><text>{{item.artistNames}}</text></view>
+      </view>
+    </view>
+  </view>
+</view>

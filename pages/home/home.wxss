@@ -1,0 +1,76 @@
+/* pages/home/home.wxss */
+.textname{
+  color: red;
+  font-size: 24rpx;
+}
+.home{
+  width: 96%;
+  margin: 0 auto;
+}
+.swiper{
+  position: relative;
+  width: 100%
+}
+.swiper-text{
+  width: 40%;
+  position: absolute;
+  bottom: 10rpx;
+  left: 10rpx;
+  font-size: 24rpx;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.frist{
+  overflow: hidden;
+  width: 100%;
+  margin-top: 15rpx;
+ 
+}
+.frist>.title{
+  margin-left: 1%;
+  font-size: 30rpx;
+  padding-bottom: 10rpx;
+  width: 60rpx;
+  border-bottom: 2px solid #C437F4;
+  border-radius: 8px;
+}
+.contentInfo{
+  float: left;
+  width: 48%;
+  margin: 10rpx 1%;
+  font-size: 24rpx;
+}
+
+.imgContain{
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.textContain{
+  width: 100%;
+  margin-top: 10rpx;
+}
+.textContain>view{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.textContain>view:nth-child(1){
+  float: left;
+  width: 70%
+}
+.textContain>view:nth-child(2){
+  width: 30%;
+  box-sizing: border-box;
+  padding-right: 10rpx;
+  font-size: 20rpx;
+  color: #C3C3C3;
+  float: right;
+  text-align: right;
+}
+
+.slide-image{
+  width: 100%
+}

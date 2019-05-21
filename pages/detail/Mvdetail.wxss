@@ -1,0 +1,80 @@
+/* pages/detail/Mvdetail.wxss */
+.textname{
+  color: red;
+  font-size: 24rpx;
+}
+.video{
+  width: 100%;
+}
+video{
+  width: 100%;
+}
+.infoContain{
+  margin: 20rpx 20rpx 10rpx;
+}
+.mvTitle{
+  font-size: 30rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mvAuthor{
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #EDECE8;
+}
+.mvAuthor>text:nth-of-type(2){
+  color: #00B26A;
+  margin-left: 10rpx;
+}
+.recomment{
+  margin-top: 10rpx;
+}
+.recomment>text{
+    color: #1D82FE;
+    font-size: 26rpx;
+  }
+.recommentContain{
+  width: 100%;
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+.imgContain{
+  height: 160rpx;
+  width: 255rpx;
+  border-radius: 4px;
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+.duration{
+  position: absolute;
+  bottom: 5rpx;
+  right: 15rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+.recommentText{
+  float: left;
+  margin: 10rpx;
+  width: 420rpx;
+}
+.recommentText>view:nth-child(1){
+  font-size: 28rpx;
+  line-height: 40rpx;
+  height: 80rpx;
+  width: 100%;
+  overflow: hidden;
+}
+.recommentText>view:nth-child(2){
+  margin-top: 30rpx;
+  font-size: 24rpx;
+  width: 100%;
+  overflow: hidden;
+}
+.recommentText>view:nth-child(2)>text{
+  margin-right: 20rpx;
+}

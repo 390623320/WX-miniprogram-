@@ -1,0 +1,35 @@
+<view class="video">
+  <video
+    id="myVideo"
+    src="{{MvData.videoUrl[MvData.videoUrl.length-1].videoUrl}}"
+    controls
+  ></video>
+</view>
+
+<view class='infoContain'>
+  <view class='mvTitle'>
+    <text>{{MvData.title}}</text>
+  </view>
+  <view class='mvAuthor'>
+    <text>歌手: </text>
+    <text>{{MvData.artistNames}}</text>
+  </view>
+  <view class='recomment'>
+    <text>相关推荐</text>
+    <view id="{{item.id}}" bindtap='changeContent' wx:for="{{MvRecommentData}}" wx:key="{{index}}" class='recommentContain'>
+      <view class='imgContain'>
+        <cover-image src='{{item.headImg}}'></cover-image>
+        <text class='duration'>{{item.duration}}</text>
+      </view>
+      <view class='recommentText'>
+        <view>
+         <text bindtap='click' >{{item.title}}</text>
+        </view>
+        <view>
+          <text>{{item.artist}}</text>
+          <text>播放量:{{item.playCount}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
